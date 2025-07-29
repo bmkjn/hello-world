@@ -19,3 +19,4 @@ def main():
     print(area)
 
 if __name__ == "__main__":
+    main()
