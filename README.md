@@ -12,17 +12,39 @@ A simple interactive Streamlit application that demonstrates various features in
 
 ## Installation
 
+### Option 1: Local Installation
+
 1. Install the required dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
+### Option 2: Docker Installation
+
+1. Build the Docker image:
+```bash
+docker build -t demo-app .
+```
+
+2. Run the container:
+```bash
+docker run -p 8501:8501 demo-app
+```
+
 ## Running the App
 
-To run the Streamlit app, use the following command:
+### Local Development
+To run the Streamlit app locally, use the following command:
 
 ```bash
 streamlit run app.py
+```
+
+### Docker
+To run the app using Docker:
+
+```bash
+docker run -p 8501:8501 demo-app
 ```
 
 The app will open in your default web browser at `http://localhost:8501`.
